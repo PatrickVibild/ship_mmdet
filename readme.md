@@ -1,17 +1,29 @@
 install dependencies
 
+check you have python 3.8
 
 ```bash
+python -V
+```
+
+```bash
+sudo apt-get install python3.8-dev
+python -m venv venv
+pip install --upgrade pip
+pip install --upgrade setuptools
+pip install cython
 pip install torch
 pip install torchvision
+pip install scikit-build
 pip install -U openmim
 mim install mmengine
 mim install "mmcv>=2.0.0"
 ```
+Can skip???
+git clone https://github.com/open-mmlab/mmdetection.git
 
 clone mmdetection repository and install dependencies
 ```bash
-git clone https://github.com/open-mmlab/mmdetection.git
 cd mmdetection
 pip install -e .
 ```
